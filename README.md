@@ -6,7 +6,7 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo
 | Ejercicio        | Descripción                |
 | -------------    | -------------              |
 | [Preguntas](/Virtualizaci%C3%B3n/Preguntas.md) | Preguntas respondidas sobre virtualización |
-| [Instalación de Sistemas Operativos en un Hipervisor]() | Documentación sobre el procesor de instalación de máquinas virtuales |
+| [Instalación de Sistemas Operativos en un Hipervisor]() | Documentación sobre el proceso de instalación de máquinas virtuales |
 
 
 ## Scripting de Linux
