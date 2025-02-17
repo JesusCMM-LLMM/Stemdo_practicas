@@ -2,7 +2,7 @@
 
 ## Apartado 1
 
-#Script sencillo que limpie la pantalla  y muestra un mensaje  
+Script sencillo que limpie la pantalla  y muestra un mensaje  
 ~~~
 #!/bin/bash 
 clear  
