@@ -1,7 +1,7 @@
 # Ejercicio 2
 
 ## Apartado 1
-Vamos a crear un script que use solo un read, si hay más argumentos que valores introducidos, los argumentos sobrantes reciben el valor NULL.
+Vamos a crear un script que use solo un read, si hay más argumentos que valores introducidos, los argumentos sobrantes reciben el valor NULL,
 y si se introducen más valores que argumentos esperados, los valores adicionales se asignan al último argumento.
 ~~~
 #!/bin/bash
