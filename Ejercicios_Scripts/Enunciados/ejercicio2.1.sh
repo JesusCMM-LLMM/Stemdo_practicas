@@ -12,4 +12,4 @@ arg3=${arg3:-NULL}
 
 echo "Estos son los tres valores: $arg1, $arg2, $arg3"
 
-#Ahora hay que seleccionar los tres primeros
+
