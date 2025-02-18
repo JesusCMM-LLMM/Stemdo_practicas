@@ -12,17 +12,15 @@ echo "El directorio actual es $PWD"
 ## Apartado 2
 
 Vamos a configurar el script anterior para que se ejecute al iniciar sesión.  
-Para ello, vamos a usar el comando CRON (aunque hay otras formas) que nos permite programar tareas.
+Para ello, vamos a usar el añadir el script al archivo bashrc
 Usamos 
 ~~~
-crontab -e
+sudo nano ~/.bashrc
 ~~~
-Y una vez dentro del archivo le añadimos
-~~~
-@reboot /home/usuario/Desktop/Ejercicios_Scripts/Enunciados/ejercicio1.1.sh
-~~~
-lo cuál le está diciendo al sistema que ese script debe ejecutarse en cada inicio. 
-NO FUNCIONA REVISAR 
+Y una vez dentro del archivo le añadimos el script (preferiblemente al final del archivo para no romper nada), y ya estaría.
+Esto le está diciendo al sistema que ese script debe ejecutarse en cada inicio.
+Abrimos la consola de comandos y comprobamos que son las primeras líneas que se muestran. 
+
 
 ## Apartado 3
 
