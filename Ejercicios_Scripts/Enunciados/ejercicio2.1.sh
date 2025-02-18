@@ -1,15 +1,15 @@
 #!/bin/bash
 
-read -p "Introduce exactamente cuatro valores: " v1 v2 v3 v4 
+read -p "Introduce los valores: " arg1 arg2 arg3 
 
-count=$(echo "$v1 $v2 $v3 $v4" | wc -w)
+#Vamos a dcirle que si está vacío, lo marque como NULL
+#con el expansor de parámetros, donde ':-NULL' nos dice 
+#qué valor darle si el argumento está vacío.
 
-if [ $count -eq 4 ]; then
-	echo "Has introducido 4 valores, que son $v1 $v2 $v3 $v4"
-elif [ $count -lt 4 ]; then
-	echo "Has introducido menos de 4 valores. El programa terminará"
-	exit
-else
-	echo "Has introducido más de 4 valores. El programa terminará"
-fi
+arg1=${arg1:-NULL}
+arg2=${arg2:-NULL}
+arg3=${arg3:-NULL}
 
+echo "Estos son los tres valores: $arg1, $arg2, $arg3"
+
+#Ahora hay que seleccionar los tres primeros
