@@ -1,5 +1,5 @@
 # Stemdo_practicas
-Repositorio con los ejercicios planteados durante las prácticas en Stemdo
+Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En esta especie de índice se muestran los ejercicios ordenados según los enunciados para facilitar su acceso y visualización. En la carpeta [Ejercicios_Scripts](/Ejercicios_Scripts) están los archivos .sh en bruto. 
 
 ## Virtualización
 
