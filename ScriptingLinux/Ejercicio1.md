@@ -30,7 +30,7 @@ Un script que nos de varias informaciones del entorno de ejecución:
 #! /bin/bash
 
 echo "El nombre del script es $0"
-echo "El número de parámetros es $n"
+echo "El número de parámetros es $#"
 echo "La lista de parámetros recibidos es $@"
 echo "El identificador del usuario que ejecuta el script es $(id -u)"
 echo "El nombre del usuario es $USER"
