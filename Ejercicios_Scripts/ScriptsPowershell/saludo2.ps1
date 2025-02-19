@@ -1,0 +1,2 @@
+
+Write-Output "Hola $args" 
