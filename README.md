@@ -23,7 +23,7 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 
 | Ejercicio        | Descripción                |
 | -------------    | -------------              |
-| [Ejercicio 1-7]() | Ejercicio de scripts en PowerShell |
+| [Ejercicios 1-7]() | Ejercicio de scripts en PowerShell |
 
 
 ## Administración de Linux
