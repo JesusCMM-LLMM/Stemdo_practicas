@@ -61,6 +61,9 @@ case $opcion in
 	;;
 esac
 ~~~
+El "if [ $? -eq 0 ]; then" de cada opción indica que se compruebe el estado del comando anterior; cuando es 0 es que todo ha ido bien  
+y si da un valor distinto es que ha habido un error. 
+
 
 ## Apartado 2
 Con este script pasamos usuarios como parámetros y comprobamos que existan en el sistema.  
