@@ -7,8 +7,7 @@
 ~~~
 
 ## Apartado 2
-Con este script pasamos usuarios como parámetros y comprobamos que  
-existan en el sistema.  
+Con este script pasamos usuarios como parámetros y comprobamos que existan en el sistema.  
 La opción -q de grep hace que grep no imprima ninguna salida por pantalla.
 ~~~
 for username in "$@"; do
