@@ -15,6 +15,6 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 | -------------    | -------------              |
 | [Ejercicio 1](/ScriptingLinux/Ejercicio1.md) | Ejercicio de creación de scripts |
 | [Ejercicio 2](/ScriptingLinux/Ejercicio2.md) | Ejercicio sobre lectura por teclado, print y date |
-| [Ejercicio 3]() | Ejercicio  |
+| [Ejercicio 3](/ScriptingLinux/Ejercicio3.md) | Ejercicio de calculadoras y verificación de ficheros |
 | [Ejercicio 4]() | Ejercicio  |
 | [Ejercicio 5]() | Ejercicio  |
