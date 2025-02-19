@@ -10,6 +10,8 @@ arg1=${arg1:-NULL}
 arg2=${arg2:-NULL}
 arg3=${arg3:-NULL}
 
-echo "Estos son los tres valores: $arg1, $arg2, $arg3"
+resultado="$arg1 $arg2 $arg3"
+echo "Estos son los tres valores en una sola variable: $resultado"
+echo "Estos son los tres valores por separado: $arg1, $arg2, $arg3"
 
 
