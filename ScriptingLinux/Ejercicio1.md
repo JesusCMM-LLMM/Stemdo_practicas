@@ -12,7 +12,7 @@ echo "El directorio actual es $PWD"
 ## Apartado 2
 
 Vamos a configurar el script anterior para que se ejecute al iniciar sesión.  
-Para ello, vamos a usar el añadir el script al archivo bashrc
+Para ello, vamos a añadir el script al archivo bashrc  
 Usamos 
 ~~~
 sudo nano ~/.bashrc
