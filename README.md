@@ -21,6 +21,11 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 
 ## Administración de Windows
 
+| Ejercicio        | Descripción                |
+| -------------    | -------------              |
+| [Ejercicio 1-7]() | Ejercicio de scripts en PowerShell |
+
+
 ## Administración de Linux
 
 ## Administración SSOO
