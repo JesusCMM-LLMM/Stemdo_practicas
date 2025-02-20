@@ -30,7 +30,7 @@ Servidores
 Dispositivos móviles (smartphones y tablets)  
 Dispositivos embebidos (como routers y electrodomésticos inteligentes)  
 Máquinas virtuales  
-Videoconsolas, incluso las más básicas.
+Videoconsolas, incluso las más básicas.  
 
 # 7. ¿Qué significa LTS?
 
