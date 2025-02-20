@@ -24,15 +24,15 @@ Responde las siguientes preguntas sobre el proceso xeyes:
 
 # Ejercicio 5 
 
-Descubre la jerarquía de procesos de tu usuario utilizando el siguiente comando: 'pstree'
+Descubre la jerarquía de procesos de tu usuario utilizando el siguiente comando: `pstree`
 
 # Ejercicio 6
 
-Utiliza el comando 'top' o 'htop' para identificar el proceso que ha consumido más tiempo de CPU.
+Utiliza el comando `top` o `htop` para identificar el proceso que ha consumido más tiempo de CPU.
 
 # Ejercicio 7
 
-Con el comando 'top', averigua cuál es el proceso que está utilizando más espacio de memoria RAM.
+Con el comando `top`, averigua cuál es el proceso que está utilizando más espacio de memoria RAM.
 
 # Ejercicio 8
 
