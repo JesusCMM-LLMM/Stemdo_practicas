@@ -12,7 +12,9 @@ Antes que nada, sacamos la información del proceso con `ps -e | grep nombre_del
 ¿Cuál es su PID (Process ID)?  4202  
 
 Para saber su proceso padre usamos `ps -eo pid,ppid,cmd | grep xeyes` que nos devuelve el PID, PPID y nombre de xeyes y después usamos `ps -e | grep 3884` para saber el nombre del proceso con ID 3884.  
+---
 ![xeyesPID](/Administración%20Linux/Imagenes/xeyesPID.png)  
+---
 ![PPID](/Administración%20Linux/Imagenes/PPID.png)  
 
 ¿Cuál es su proceso padre (PPID - Parent Process ID)?  Bash  
