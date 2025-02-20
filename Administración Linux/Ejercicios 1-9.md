@@ -8,10 +8,12 @@ xeyes
 # Ejercicio 2
 
 Responde las siguientes preguntas sobre el proceso xeyes:
+Antes que nada, sacamos la información del proceso con `ps -e | grep nombre_del_proceso`  
+¿Cuál es su PID (Process ID)?  4202  
 
-¿Cuál es su PID (Process ID)?
-¿Cuál es su proceso padre (PPID - Parent Process ID)?
-¿Cuál es el PID del proceso padre?
+Para saber su proceso padre usamos `ps -eo pid,ppid,cmd | grep xeyes` que nos devuelve el PID, PPID y nombre de xeyes y después usamos `ps -e | grep 3884` para saber el nombre del proceso con ID 3884.
+¿Cuál es su proceso padre (PPID - Parent Process ID)?  Bash  
+¿Cuál es el PID del proceso padre?  3884  
 
 # Ejercicio 3
 
