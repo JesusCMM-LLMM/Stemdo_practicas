@@ -7,7 +7,7 @@ xeyes
 
 # Ejercicio 2
 
-Responde las siguientes preguntas sobre el proceso xeyes:
+Responde las siguientes preguntas sobre el proceso xeyes:  
 Antes que nada, sacamos la información del proceso con `ps -e | grep nombre_del_proceso`  
 ¿Cuál es su PID (Process ID)?  4202  
 
