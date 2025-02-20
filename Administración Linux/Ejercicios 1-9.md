@@ -4,7 +4,6 @@ Simplemente, en la terminal de Linux, ejecutamos
 ~~~
 xeyes
 ~~~
-No tiene más. 
 
 # Ejercicio 2
 
