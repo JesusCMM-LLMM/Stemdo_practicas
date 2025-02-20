@@ -33,7 +33,10 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 ## Administración AD
 
 ## Administración Base de Datos  
-
+| Ejercicio        | Descripción                |
+| -------------    | -------------              |
+| [Tarea de investigación](/Administración%20Base%20de%20Datos/Tarea%20de%20Investigación:%20Las%20Bases%20de%20Datos%20en%20la%20Actualidad.md) | Las bases de datos en la actualidad |
+| [Ejercicio SQL](/Administración%20Base%20de%20Datos/Ejercicios%20curso%20Base%20de%20Datos) | Ejercicio de SQL propuestos en el curso |
 ## Ejercicios Redes
 
 
