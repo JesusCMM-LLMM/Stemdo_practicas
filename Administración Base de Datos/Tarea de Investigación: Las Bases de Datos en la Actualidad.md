@@ -48,30 +48,41 @@ Ya en los 2000, Surgieron las bases de datos no relacionales, para manejar grand
 
 ## Modelos de datos
 
-### Modelo relacional: Organiza los datos en tablas con relaciones definidas. Utiliza SQL para consultas y es ampliamente utilizado en sistemas empresariales.
+Muchos de estos modelos ya los hemos nombrado en apartados anteriores, ahora vamos a definirlos con más claridad. 
 
-### Modelo de entidad-relación (ER): Representa los datos en términos de entidades (objetos) y relaciones. Es útil para diseñar bases de datos relacionales.
+### Modelo relacional: 
 
-### Modelo orientado a objetos: Almacena datos como objetos, integrando métodos y atributos, lo que es útil para aplicaciones que requieren complejidad.
+El modelo relacional organiza los datos en tablas (también llamadas relaciones), donde cada tabla representa una entidad y las columnas representan los atributos de esa entidad. Las filas son instancias de datos. Las relaciones entre las tablas se establecen mediante claves primarias y foráneas. Este modelo se basa en la teoría de conjuntos y permite realizar consultas complejas utilizando SQL (Structured Query Language). Es ideal para aplicaciones empresariales que requieren integridad de datos, transacciones y un esquema bien definido.
 
-### Modelo de grafos: Se enfoca en las relaciones entre datos, siendo útil en aplicaciones como redes sociales y análisis de conexiones.
+### Modelo de entidad-relación (ER): 
 
-### Modelo documental: Utilizado en bases de datos NoSQL, almacena datos en documentos (como JSON), permitiendo flexibilidad y escalabilidad.
+El modelo de entidad-relación es una herramienta de diseño que permite representar de manera gráfica las entidades (objetos de interés, como "facturas" o "productos") y sus relaciones. Se utiliza comúnmente en la fase de diseño de bases de datos relacionales. En un diagrama ER, las entidades se representan como rectángulos y las relaciones como rombos. Los atributos de las entidades se muestran como elipses conectadas a sus respectivas entidades. Este modelo ayuda a visualizar la estructura de la base de datos y a identificar las relaciones entre diferentes entidades.
+
+### Modelo orientado a objetos: 
+
+El modelo orientado a objetos almacena datos como objetos, que son instancias de clases. Cada objeto combina datos (atributos) y comportamientos (métodos). Este enfoque es especialmente útil en aplicaciones que requieren una representación más cercana al mundo real, donde los objetos pueden interactuar entre sí. Además, permite la herencia y el polimorfismo, facilitando la reutilización del código y la creación de estructuras de datos complejas. Este modelo es común en aplicaciones de software y sistemas donde la modularidad y la encapsulación son importantes.
+
+### Modelo de grafos: 
+
+El modelo de grafos se centra en la representación de datos mediante nodos (que representan entidades) y aristas (que representan relaciones). Este modelo es extremadamente útil para aplicaciones que implican conexiones complejas, como redes sociales, recomendaciones de productos y análisis de redes. Las bases de datos de grafos, como Neo4j, permiten realizar consultas eficientes sobre las relaciones entre datos, lo que facilita el descubrimiento de patrones y la exploración de datos interrelacionados. 
+
+### Modelo documental: 
+
+El modelo documental es utilizado en bases de datos NoSQL y almacena datos en documentos, típicamente en formatos como JSON, BSON o XML. Cada documento puede tener una estructura diferente, lo que proporciona gran flexibilidad y permite la inclusión de datos no estructurados o semiestructurados, pero a la vez esta diferencia estructural puede causar problemas de compatibilidad. El modelo documental es popular en aplicaciones web y móviles, donde los requisitos de esquema pueden cambiar con frecuencia y donde se valora la agilidad en el desarrollo.
 
 ## Tecnologías actuales
 
-* MySQL: Es un sistema de gestión de bases de datos relacional de código abierto, muy popular en aplicaciones web. Se destaca por su simplicidad y eficacia, lo que lo hace accesible tanto para desarrolladores novatos como para expertos. MySQL es conocido por su alta velocidad y rendimiento, y es utilizado en una amplia variedad de entornos, desde pequeñas aplicaciones hasta grandes sistemas empresariales.
+* **MySQL:** Es un sistema de gestión de bases de datos relacional de código abierto, muy popular en aplicaciones web. Se destaca por su simplicidad y eficacia, lo que lo hace accesible tanto para desarrolladores novatos como para expertos. MySQL es conocido por su alta velocidad y rendimiento, y es utilizado en una amplia variedad de entornos, desde pequeñas aplicaciones hasta grandes sistemas empresariales.
 
-* PostgreSQL: Este sistema de gestión de bases de datos relacional (RDBMS) es conocido por su robustez y características avanzadas. Ofrece soporte para tipos de datos complejos, como JSONB y arrays, y permite la creación de extensiones, lo que le da gran flexibilidad. PostgreSQL es especialmente valorado por su capacidad para manejar cargas de trabajo pesadas y su compatibilidad con estándares SQL, lo que lo convierte en una opción preferida para aplicaciones empresariales críticas.
+* **PostgreSQL:** Este sistema de gestión de bases de datos relacional (RDBMS) es conocido por su robustez y características avanzadas. Ofrece soporte para tipos de datos complejos, como JSONB y arrays, y permite la creación de extensiones, lo que le da gran flexibilidad. PostgreSQL es especialmente valorado por su capacidad para manejar cargas de trabajo pesadas y su compatibilidad con estándares SQL, lo que lo convierte en una opción preferida para aplicaciones empresariales críticas.
 
-* MongoDB: Como base de datos NoSQL orientada a documentos, MongoDB permite almacenar datos en formato JSON, lo que facilita la gestión de información no estructurada y semiestructurada. Es ideal para aplicaciones web y móviles que requieren escalabilidad y agilidad en el desarrollo. MongoDB permite a los desarrolladores trabajar con datos de manera más dinámica, y su estructura flexible se adapta bien a cambios en los requisitos de los datos.
+* **MongoDB:** Como base de datos NoSQL orientada a documentos, MongoDB permite almacenar datos en formato JSON, lo que facilita la gestión de información no estructurada y semiestructurada. Es ideal para aplicaciones web y móviles que requieren escalabilidad y agilidad en el desarrollo. MongoDB permite a los desarrolladores trabajar con datos de manera más dinámica, y su estructura flexible se adapta bien a cambios en los requisitos de los datos.
 
-* Cassandra: Diseñada para manejar grandes cantidades de datos a través de múltiples nodos, Cassandra es una base de datos NoSQL que ofrece alta disponibilidad y escalabilidad horizontal. Es especialmente adecuada para aplicaciones que necesitan un rendimiento constante en entornos distribuidos, como redes sociales y sistemas de análisis en tiempo real. Su arquitectura de escritura optimizada permite gestionar grandes volúmenes de datos de manera eficiente.
+* **Cassandra:** Diseñada para manejar grandes cantidades de datos a través de múltiples nodos, Cassandra es una base de datos NoSQL que ofrece alta disponibilidad y escalabilidad horizontal. Es especialmente adecuada para aplicaciones que necesitan un rendimiento constante en entornos distribuidos, como redes sociales y sistemas de análisis en tiempo real. Su arquitectura de escritura optimizada permite gestionar grandes volúmenes de datos de manera eficiente.
 
-* Redis: Esta base de datos en memoria de tipo clave-valor es conocida por su alta velocidad y eficiencia, lo que la hace ideal para aplicaciones que requieren acceso rápido a datos temporales, como sistemas de caché, colas de mensajes y sesiones de usuario. Redis soporta estructuras de datos avanzadas, lo que le permite realizar operaciones complejas con un rendimiento excepcional.
+* **Redis:** Esta base de datos en memoria de tipo clave-valor es conocida por su alta velocidad y eficiencia, lo que la hace ideal para aplicaciones que requieren acceso rápido a datos temporales, como sistemas de caché, colas de mensajes y sesiones de usuario. Redis soporta estructuras de datos avanzadas, lo que le permite realizar operaciones complejas con un rendimiento excepcional.
 
-* CockroachDB
-Una tecnología emergente en el ámbito de las bases de datos es CockroachDB, una base de datos SQL distribuida que se enfoca en la resiliencia y la escalabilidad. Su diseño permite que las aplicaciones manejen automáticamente fallos y crezcan horizontalmente sin necesidad de reconfiguración, lo que la hace atractiva para entornos en la nube y aplicaciones empresariales. CockroachDB combina la familiaridad de SQL con las ventajas de un sistema NoSQL, ofreciendo así una solución versátil para las necesidades actuales de datos en tiempo real.
+* **CockroachDB:** Una tecnología emergente en el ámbito de las bases de datos es CockroachDB, una base de datos SQL distribuida que se enfoca en la resiliencia y la escalabilidad. Su diseño permite que las aplicaciones manejen automáticamente fallos y crezcan horizontalmente sin necesidad de reconfiguración, lo que la hace atractiva para entornos en la nube y aplicaciones empresariales. CockroachDB combina la familiaridad de SQL con las ventajas de un sistema NoSQL, ofreciendo así una solución versátil para las necesidades actuales de datos en tiempo real.
 
 
 ## Aplicaciones de las bases de datos  
