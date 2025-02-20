@@ -30,7 +30,7 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 
 | Ejercicio        | Descripción                |
 | -------------    | -------------              |
-| [Ejercicios 1-9]() | Ejercicios prácticos para reforzar conocimientos sobre la administración de procesos en Linux. |
+| [Ejercicios 1-9](/Administración%20Linux/Ejercicios%201-9.md) | Ejercicios prácticos para reforzar conocimientos sobre la administración de procesos en Linux. |
 
 
 ## Administración SSOO
