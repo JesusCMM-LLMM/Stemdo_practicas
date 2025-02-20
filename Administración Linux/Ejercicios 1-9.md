@@ -57,20 +57,21 @@ Descubre cuándo se inició el sistema con el siguiente comando:
 
 # Ejercicio 9 
 Montar un Disco Duro en Linux en VirtualBox  
----
+---  
+
 Entramos en Virtualbox, y en la opción 'Almacenamiento', pulsamos en 'Añadir un disco duro', y creamos uno nuevo.  
-IMGN1
-IMAGN2
-Una vez creado, volvemos a la misma lista de antes y vemos que ya sale como disco duro virtual, lo seleccionamos y pulsamos 'Seleccionar'. Vemos que ya aparece en el Puerto SATA 1. 
-Vamos a iniciar la máquina virtual y seguimos desde ahí. 
-Usando `sudo fdisk -l` vemos que lo reconoce y su nombre es `/dev/sdb`
-IMGN3 
-Entramos en fdisk en este nuevo disco con el comando `sudo fdisk /dev/sdb` y usamos el comando `n` para crear una nueva partición, después la opción `p` para que la partición sea del tipo primario, y que sea la partición número 1. Después, ponemos como sistema de archivos Linux, con la opción `t`, introducimos la opción 83. Una vez hecho esto, usamos la opción `w` y se guardan los cambios. 
-IMGN5
-A continuación, la formateamos en ext4 con `sudo mkfs.ext4 /dev/sdb`
-IMG6
-Ahora, vamos a montarlo. Creamos un directorio donde montarlo, y lo montamos usando el comando `mount`.
-IMG7
-Por último, vamos a editar el archivo `/etc/fstab` para que se monte siempre al iniciar sesión. Usamos `sudo blkid` para obtener el UUID del nuevo disco, y añadimos esta información junto a la ruta de montaje en este archivo en una línea, y voilá. 
+![DD1](/Administración%20Linux/Imagenes/DiscoDuro1.png)  
+![DD2](/Administración%20Linux/Imagenes/DiscoDuro2.png)    
+Una vez creado, volvemos a la misma lista de antes y vemos que ya sale como disco duro virtual, lo seleccionamos y pulsamos 'Seleccionar'. Vemos que ya aparece en el Puerto SATA 1.  
+Vamos a iniciar la máquina virtual y seguimos desde ahí.  
+Usando `sudo fdisk -l` vemos que lo reconoce y su nombre es `/dev/sdb`  
+![DD3](/Administración%20Linux/Imagenes/DiscoDuro3.png)  
+Entramos en fdisk en este nuevo disco con el comando `sudo fdisk /dev/sdb` y usamos el comando `n` para crear una nueva partición, después la opción `p` para que la partición sea del tipo primario, y que sea la partición número 1. Después, ponemos como sistema de archivos Linux, con la opción `t`, introducimos la opción 83. Una vez hecho esto, usamos la opción `w` y se guardan los cambios.   
+![DD5](/Administración%20Linux/Imagenes/DiscoDuro5.png)  
+A continuación, la formateamos en ext4 con `sudo mkfs.ext4 /dev/sdb`  
+![DD6](/Administración%20Linux/Imagenes/DiscoDuro6.png)  
+Ahora, vamos a montarlo. Creamos un directorio donde montarlo, y lo montamos usando el comando `mount`.  
+![DD7](/Administración%20Linux/Imagenes/DiscoDuro7.png)  
+Por último, vamos a editar el archivo `/etc/fstab` para que se monte siempre al iniciar sesión. Usamos `sudo blkid` para obtener el UUID del nuevo disco, y añadimos esta información junto a la ruta de montaje en este archivo en una línea, y voilá.   
 
 
