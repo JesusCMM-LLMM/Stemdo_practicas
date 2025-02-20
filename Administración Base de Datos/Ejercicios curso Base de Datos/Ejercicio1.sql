@@ -1,0 +1,10 @@
+USE curso;
+CREATE TABLE libros (
+id_libro INT PRIMARY KEY AUTO_INCREMENT,
+Título VARCHAR(255) NOT NULL, 
+Autor VARCHAR(100) NOT NULL,
+Fech_publicacion DATE,
+Género VARCHAR(50)
+);
+
+	

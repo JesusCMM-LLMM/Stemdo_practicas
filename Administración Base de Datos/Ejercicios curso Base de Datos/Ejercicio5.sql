@@ -1,0 +1,3 @@
+SELECT *
+FROM PRODUCTOS
+ORDER BY precio desc
