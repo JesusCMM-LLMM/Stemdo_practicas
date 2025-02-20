@@ -56,6 +56,6 @@ Con el comando `top`, averigua cuál es el proceso que está utilizando más esp
 
 Descubre cuándo se inició el sistema con el siguiente comando:
 
- ![UPTIME](/Administración%20Linux/Imagenes/UPTIME.png)
+ ![UPTIME](/Administración%20Linux/Imagenes/uptime.png)
 
 # Ejercicio 9 
