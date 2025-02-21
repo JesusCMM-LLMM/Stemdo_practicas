@@ -8,7 +8,6 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 | [Preguntas](/Virtualizaci%C3%B3n/Preguntas.md) | Preguntas respondidas sobre virtualización |
 
 
-
 ## Scripting de Linux
 
 | Ejercicio        | Descripción                |
