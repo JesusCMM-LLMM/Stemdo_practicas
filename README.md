@@ -45,4 +45,13 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 
 ## Ejercicios Redes
 
-
+| Ejercicio        | Descripción                |
+| -------------    | -------------              |
+| [Ejercicio 1](/ScriptingLinux/Ejercicio1.md) | Clasificación de Redes |
+| [Ejercicio 2](/ScriptingLinux/Ejercicio2.md) | Topologías  |
+| [Ejercicio 3](/ScriptingLinux/Ejercicio3.md) | Modelos OSI y TCP/IP  |
+| [Ejercicio 4](/ScriptingLinux/Ejercicio4.md) | Subnetting  |
+| [Ejercicio 5](/ScriptingLinux/Ejercicio1.md) | Protocolos de Red  |
+| [Ejercicio 6](/ScriptingLinux/Ejercicio2.md) | Proxy inverso con Nginx y Apache  |
+| [Ejercicio 7](/ScriptingLinux/Ejercicio3.md) | Balanceador de carga con Nginx y Apache |
+| [Ejercicio 8](/ScriptingLinux/Ejercicio4.md) | Laboratorio Cisco Packet Tracer  |
