@@ -35,6 +35,10 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 
 ## Administración SSOO
 
+| Ejercicio        | Descripción                |
+| -------------    | -------------              |
+| [Ejercicios 1-5](/Administración%20SSOO/Ejercicios%20de%20Administración%20de%20Sistemas%20Operativos.md) | Ejercicios prácticos para reforzar el manejo de Shell Scripting y la administración de sistemas operativos. |
+
 ## Administración AD
 
 ## Administración Base de Datos  
