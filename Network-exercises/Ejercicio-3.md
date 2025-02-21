@@ -1,4 +1,4 @@
-# Indicar de cada ejemplo a que capa de los dos modelos pertenece,justifica tu respuesta.
+# Indicar de cada ejemplo a qué capa de los dos modelos pertenece, y justifica tu respuesta.
 
 ## 1.Codificación de los datos en bits y manejo de la transmisión física de los datos a través de un cable de red.
 
@@ -22,7 +22,7 @@ Capa de presentación en el Modelo OSI y capa de Aplicación en el modelo TCP/IP
 
 ## 6.Manejo de las conexiones de red, incluyendo el control de flujo y la secuenciación de los datos.
 
-Capa de enlace de datos del Modelo OSI, capa de enlace del TCP/IP original, y capa de enlace de datos del modelo TCP/IP actual. 
+Capa de enlace de datos del Modelo OSI, capa de enlace del TCP/IP original, y capa de enlace de datos del modelo TCP/IP actual. Esta capa actúa controlando el flujo y la secuenciación de los datos para evitar colisiones y asegurar una comunicación eficiente.
 
 ## 7.Presentación de la interfaz al usuario final y manejo de la interacción entre aplicaciones (p. ej., navegación web, envío de correos electrónicos).
 
