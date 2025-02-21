@@ -1,7 +1,7 @@
 | Ejemplo de red       | Tamaño de red          | Descripción       |
 | -------------    | -------------              | ---------------                |
-| Red en una casa conectando dispositivos como computadoras, impresoras y teléfonos a un router Wi-Fi. | bbbbbb | aaaaaaaaaa    |
-| Conexión entre dos edificios de una universidad en una ciudad, utilizando fibra óptica. | Ejercicio sobre lectura por teclado, print y date |          |
-| [Ejercicio 3](/ScriptingLinux/Ejercicio3.md) | Ejercicio de calculadoras y verificación de ficheros |
-| [Ejercicio 4](/ScriptingLinux/Ejercicio4.md) | Ejercicio de IP y de procesos |
-| [Ejercicio 5](/ScriptingLinux/Ejercicio5.md) | Ejercicio relacionado con usuarios |
+| Red en una casa conectando dispositivos como computadoras, impresoras y teléfonos a un router Wi-Fi. |       |           |
+| Conexión entre dos edificios de una universidad en una ciudad, utilizando fibra óptica. |         |          |
+| Red que conecta oficinas de una empresa en diferentes países mediante enlaces satelitales. |         |          |
+| Conexión de dispositivos personales como un teléfono móvil, una tableta y unos auriculares Bluetooth. |         |          |
+| Red de una oficina pequeña donde varias computadoras están conectadas a un switch para compartir archivos y recursos. |         |          |
