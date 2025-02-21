@@ -47,11 +47,11 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 
 | Ejercicio        | Descripción                |
 | -------------    | -------------              |
-| [Ejercicio 1](/ScriptingLinux/Ejercicio1.md) | Clasificación de Redes |
-| [Ejercicio 2](/ScriptingLinux/Ejercicio2.md) | Topologías  |
-| [Ejercicio 3](/ScriptingLinux/Ejercicio3.md) | Modelos OSI y TCP/IP  |
-| [Ejercicio 4](/ScriptingLinux/Ejercicio4.md) | Subnetting  |
-| [Ejercicio 5](/ScriptingLinux/Ejercicio1.md) | Protocolos de Red  |
-| [Ejercicio 6](/ScriptingLinux/Ejercicio2.md) | Proxy inverso con Nginx y Apache  |
-| [Ejercicio 7](/ScriptingLinux/Ejercicio3.md) | Balanceador de carga con Nginx y Apache |
-| [Ejercicio 8](/ScriptingLinux/Ejercicio4.md) | Laboratorio Cisco Packet Tracer  |
+| [Ejercicio 1](/Network-exercises/Ejercicio-1.md) | Clasificación de Redes |
+| [Ejercicio 2](/Network-exercises/Ejercicio-2.md) | Topologías  |
+| [Ejercicio 3](/Network-exercises/Ejercicio-3.md) | Modelos OSI y TCP/IP  |
+| [Ejercicio 4](/Network-exercises/Ejercicio-4.md) | Subnetting  |
+| [Ejercicio 5](/Network-exercises/Ejercicio-5.md) | Protocolos de Red  |
+| [Ejercicio 6](/Network-exercises/Ejercicio-6.md) | Proxy inverso con Nginx y Apache  |
+| [Ejercicio 7](/Network-exercises/Ejercicio-7.md) | Balanceador de carga con Nginx y Apache |
+| [Ejercicio 8](/Network-exercises/Ejercicio-8.md) | Laboratorio Cisco Packet Tracer  |
