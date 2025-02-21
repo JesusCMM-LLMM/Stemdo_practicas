@@ -26,6 +26,7 @@ Una vez hecho esto, vamos a permitir el puerto 3389, que es default para xrdp, p
 sudo ufw allow 3389/tcp
 ~~~ 
 Reiniciamos el servicio de xrdp para que se apliquen los cambios y ya que estamos, vemos nuestra ip porque la vamos a necesitar más adelante (con ip a). Con esto, ya estaría configurado, ahora vamos a intentar acceder desde otra máquina con la ip y el puerto 3389.
-![image](https://github.com/user-attachments/assets/7409f3d6-02b2-485f-bcc6-671d7957a7c5)
-Introducimos las credenciales y ya estaríamos conectados al escritorio remoto. 
+![image](https://github.com/user-attachments/assets/7409f3d6-02b2-485f-bcc6-671d7957a7c5)  
+Introducimos las credenciales y ya deberíamos conectarnos al escritorio remoto, pero desde el pc con windows 11 no podemos porque la versión Home no lo permite. 
+**WIP**
 
