@@ -52,6 +52,4 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 | [Ejercicio 3](/Network-exercises/Ejercicio-3.md) | Modelos OSI y TCP/IP  |
 | [Ejercicio 4](/Network-exercises/Ejercicio-4.md) | Subnetting  |
 | [Ejercicio 5](/Network-exercises/Ejercicio-5.md) | Protocolos de Red  |
-| [Ejercicio 6](/Network-exercises/Ejercicio-6.md) | Proxy inverso con Nginx y Apache  |
-| [Ejercicio 7](/Network-exercises/Ejercicio-7.md) | Balanceador de carga con Nginx y Apache |
-| [Ejercicio 8](/Network-exercises/Ejercicio-8.md) | Laboratorio Cisco Packet Tracer  |
+
