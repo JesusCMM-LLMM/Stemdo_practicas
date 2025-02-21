@@ -1,4 +1,4 @@
-# Analizar cada caso y decir qué protocolo es, investigar que protocolo es en caso de no conocerlo.
+# Analizar cada caso y decir qué protocolo es, investigar qué protocolo es en caso de no conocerlo.
 
 | #    |  Actividad   |  Protocolo   |
 | ---- | ------------ | ------------ |
