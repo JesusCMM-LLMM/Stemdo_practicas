@@ -25,15 +25,6 @@ Una vez hecho esto, vamos a permitir el puerto 3389, que es default para xrdp, p
 ~~~
 sudo ufw allow 3389/tcp
 ~~~ 
-y a continuación, vamos a instalar un entorno de escritorio, por ejemplo buscando me recomiendan Xfce. Lo instalamos con apt: 
-
-~~~
-sudo apt install xfce4 xfce4-goodies
-~~~
-y vamos a decirle a xrdp que utilice este entorno de escritorio, simplemente editando el archivo de configuración de xrdp con el comando: 
-~~~
-echo "xfce4-session" > ~/.xsession
-~~~
 Reiniciamos el servicio de xrdp para que se apliquen los cambios y ya que estamos, vemos nuestra ip porque la vamos a necesitar más adelante (con ip a). Con esto, ya estaría configurado, ahora vamos a intentar acceder desde otra máquina con la ip y el puerto 3389.
 ![image](https://github.com/user-attachments/assets/7409f3d6-02b2-485f-bcc6-671d7957a7c5)
 Introducimos las credenciales y ya estaríamos conectados al escritorio remoto. 
