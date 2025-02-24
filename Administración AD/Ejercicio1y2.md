@@ -1,6 +1,7 @@
 ## 1. Creación de Usuarios en Active Directory desde CSV
 
 Con este script he conseguido crear en la unidad organizativa "Jugadores" a todos los usuarios y organizarlos por grupos. 
+El script en ps1 está [aquí](/Administración%20AD/Futbolistas.ps1)
 ~~~
 
  Import-Csv -Path C:\futbolistas.csv | ForEach-Object {
