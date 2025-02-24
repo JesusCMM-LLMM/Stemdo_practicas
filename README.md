@@ -40,6 +40,10 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 
 ## Administración AD
 
+| Ejercicio        | Descripción                |
+| -------------    | -------------              |
+| [Ejercicio 1]() | Creación de usuarios y unidades organizativas |
+
 ## Administración Base de Datos  
 | Ejercicio        | Descripción                |
 | -------------    | -------------              |
