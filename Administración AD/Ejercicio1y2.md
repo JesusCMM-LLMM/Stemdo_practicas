@@ -1,10 +1,17 @@
 ## 1. Creación de Usuarios en Active Directory desde CSV
 
-Con este script he conseguido crear en la unidad organizativa "Jugadores" a todos los usuarios y organizarlos por grupos. 
+Con este script he conseguido crear la unidad organizativa "Jugadores" y todos los usuarios y organizarlos por grupos. 
 El script en ps1 está [aquí](/Administración%20AD/Futbolistas.ps1)
 ~~~
+# Definir la ruta de la Unidad Organizativa (OU)
+$ouPath = "OU=Jugadores,DC=miequipo,DC=local"
 
- Import-Csv -Path C:\futbolistas.csv | ForEach-Object {
+# Verificar si la OU ya existe antes de crearla (me ha ayudado vicky)
+     if (-not (Get-ADOrganizationalUnit -Filter "DistinguishedName -eq '$ouPath'" -ErrorAction SilentlyContinue)) {
+     New-ADOrganizationalUnit -Name "Jugadores" -Path "DC=miequipo,DC=local"
+     }
+
+Import-Csv -Path C:\futbolistas.csv | ForEach-Object {
      # Parámetros
      $nombreCompleto = "$($_.FirstName) $($_.LastName)"
      $usuario = $_.Username
@@ -16,6 +23,7 @@ El script en ps1 está [aquí](/Administración%20AD/Futbolistas.ps1)
      if (-not (Get-ADGroup -Filter { Name -eq $grupo } -ErrorAction SilentlyContinue)) {
          New-ADGroup -Name $grupo -GroupScope Global -Path "OU=Jugadores,DC=miequipo,DC=local"
          }
+    
 
      # Crea usuarios
      New-ADUser -Name $nombreCompleto `
@@ -29,6 +37,7 @@ El script en ps1 está [aquí](/Administración%20AD/Futbolistas.ps1)
      # Agregar al grupo
      Add-ADGroupMember -Identity $grupo -Members $usuario
  }
+
 ~~~
 
 ![image](https://github.com/user-attachments/assets/638b6cda-efd1-409c-b706-5ead866bdcad)
