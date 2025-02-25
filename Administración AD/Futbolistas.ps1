@@ -10,7 +10,7 @@ Import-Csv -Path C:\futbolistas.csv | ForEach-Object {
      if (-not (Get-ADGroup -Filter { Name -eq $grupo } -ErrorAction SilentlyContinue)) {
          New-ADGroup -Name $grupo -GroupScope Global -Path "OU=Jugadores,DC=miequipo,DC=local"
          }
-     # Verificar si la OU ya existe antes de crearla (me ha ayudado chatgpt, porque no sabia como encontrarlo)
+     # Verificar si la OU ya existe antes de crearla (me ha ayudado vicky)
      if (-not (Get-ADOrganizationalUnit -Filter "DistinguishedName -eq '$ouPath'" -ErrorAction SilentlyContinue)) {
      New-ADOrganizationalUnit -Name "Jugadores" -Path "DC=miequipo,DC=local"
      }
