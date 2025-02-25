@@ -9,7 +9,7 @@ fi
 
 #Hasta aquí hemos verificado si el directorio existe
 
-read -p "Introduce el nombre del fichero en del directorio: " fich
+read -p "Introduce el nombre del fichero en el directorio: " fich
 ruta="$dir/$fich"
 
 #Vamos a pedir los cinco nombres con un bucle for dentro del if que comprueba si el fichero existe
@@ -20,8 +20,8 @@ if [ -e "$ruta" ]; then
     echo "Permisos del fichero:"
     ls -l "$ruta" | awk '{print $1}'
  	for i in {1..5}; do
-        read -p "Introduce el nombre completo del usuario $i: " nombre
-        echo "$i:$nombre" >> "$ruta"
+        read -p "Introduce el nombre completo del usuario $i: " nombre apellido1 apellido2
+        echo "$i:$nombre:$apellido1:$apellido2" >> "$ruta"
     	done
     	echo "Nombres almacenados en '$ruta'."
 else
