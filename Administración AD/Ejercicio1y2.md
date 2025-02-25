@@ -45,5 +45,21 @@ Import-Csv -Path C:\futbolistas.csv | ForEach-Object {
 
 ## 2. Creación de una estructura de OUs y asignación automática de usuarios
 
+Estos son los scripts. Yo personalmente he creado los CSVs por separado, pero podría hacerse on un mismo CSV
+~~~
+Import-Csv -Path "C:\ligas.csv" | ForEach-Object {
+ New-ADOrganizationalUnit -Name $_.Nombre -Path $_.Ruta
+}
+~~~
+
+~~~
+Import-Csv -Path "C:\Posiciones.csv" | ForEach-Object {
+ New-ADOrganizationalUnit -Name $_.Posicion -Path $_.Ruta
+}
+~~~
+
+![image](https://github.com/user-attachments/assets/6c9a878d-b1d4-4d29-9da2-22aeabbd882a)
+
+
 
 
