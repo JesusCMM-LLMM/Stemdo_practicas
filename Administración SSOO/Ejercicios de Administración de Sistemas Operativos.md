@@ -1,7 +1,7 @@
 # Ejercicios de Administración de Sistemas Operativos
 
 ## Ejercicio 1: Operaciones matemáticas en Shell Script
-
+~~~
 #!/bin/bash
 
 read -p "Introduce un directorio: " dir
@@ -32,6 +32,7 @@ else
     echo "El fichero '$fich' no existe."
     exit 1
 fi
+~~~
 
 ## Ejercicio 2: Comprobación de ficheros y almacenamiento de datos
 
