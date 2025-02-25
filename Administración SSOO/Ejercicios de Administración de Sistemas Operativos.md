@@ -23,7 +23,7 @@ if [ -e "$ruta" ]; then
     echo "El fichero '$fich' existe."
     echo "Permisos del fichero:"
     ls -l "$ruta" | awk '{print $1}'
- 	for i in {1..5}; do
+    for i in {1..5}; do
         read -p "Introduce el nombre completo del usuario $i: " nombre apellido1 apellido2
         echo "$i:$nombre:$apellido1:$apellido2" >> "$ruta"
     	done
