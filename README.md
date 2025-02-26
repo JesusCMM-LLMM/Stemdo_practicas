@@ -65,4 +65,4 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 | Ejercicio        | Descripción                |
 | -------------    | -------------              |
 | [Ejercicio 1](/Javascript/Ejercicio1.js) | Script de saludo, hora y directorio actual |
-
+| [Ejercicio 2](/Javascript/Ejercicio2.js) | Script de info del entorno |
