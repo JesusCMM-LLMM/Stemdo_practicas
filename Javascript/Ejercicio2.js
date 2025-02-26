@@ -1,5 +1,5 @@
 // Obtener el nombre del script
-const scriptName = process.argv[1].split('/').pop();
+const scriptName = process.argv[1].split('/').pop(); //pop nos coge el ultimo elemento de la cadena, / es el separador y argv[1] es la ruta del script
 
 // Obtener los parámetros que se le pasan al script
 const params = process.argv.slice(2); //Como el argumento 1 y 2 son respectivamente la ruta al node js y la ruta al ejecutable, los cortamos con el slice
