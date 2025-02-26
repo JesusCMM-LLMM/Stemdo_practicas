@@ -42,13 +42,13 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 
 | Ejercicio        | Descripción                |
 | -------------    | -------------              |
-| [Ejercicio 1 y 2](/Administración%20AD/Ejercicio1y2.md) | Creación de usuarios y unidades organizativas |
+| [Ejercicio 1 y 2](/Administración_AD/Ejercicio1y2.md) | Creación de usuarios y unidades organizativas |
 
 ## Administración Base de Datos  
 | Ejercicio        | Descripción                |
 | -------------    | -------------              |
-| [Tarea de investigación](/Administración%20Base%20de%20Datos/Tarea%20de%20Investigación:%20Las%20Bases%20de%20Datos%20en%20la%20Actualidad.md) | Las bases de datos en la actualidad |
-| [Ejercicios SQL](/Administración%20Base%20de%20Datos/Ejercicios%20curso%20Base%20de%20Datos) | Ejercicios de SQL propuestos en el curso |
+| [Tarea de investigación](/Administración_BBDD/Tarea%20de%20Investigación:%20Las%20Bases%20de%20Datos%20en%20la%20Actualidad.md) | Las bases de datos en la actualidad |
+| [Ejercicios SQL](/Administración_BBDD/Ejercicios%20curso%20Base%20de%20Datos) | Ejercicios de SQL propuestos en el curso |
 
 ## Ejercicios Redes
 
