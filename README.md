@@ -60,3 +60,9 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 | [Ejercicio 4](/Network-exercises/Ejercicio-4.md) | Subnetting  |
 | [Ejercicio 5](/Network-exercises/Ejercicio-5.md) | Protocolos de Red  |
 
+## Javascript
+
+| Ejercicio        | Descripción                |
+| -------------    | -------------              |
+| [Ejercicio 1](/Javascript/Ejercicio1.js) | Script de saludo, hora y directorio actual |
+
