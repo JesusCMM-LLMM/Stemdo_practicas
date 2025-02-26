@@ -2,11 +2,124 @@
 
 ## Ejercicio 1: Operaciones matemáticas en Shell Script
 
+~~~
+
+#!/bin/bash
+
+if [ $# -ne 3 ]; then
+	echo "No has introducido exactamente tres argumentos. Vuelve a intentarlo" 
+	exit
+fi
+num1=$1
+op=$2
+num2=$3
+
+if [[ ! $1 =~ ^[0-9]+$ ]]; then
+	echo "El primer parámetro no es un número"
+	exit
+fi
+
+if [ "$op" != "+" ] && [ "$op" != "-" ] && [ "$op" != "x" ] && [ "$op" != "/" ] && [ "$op" != "^" ]; then
+        echo "El operador no es válido, por favor introduce +, -, x, /, o ^"
+        exit
+fi
+
+if [[ ! $3 =~ ^[0-9]+$ ]]; then
+        echo "El segundo parámetro no es un número"
+        exit
+fi
+
+case "$op" in
+    "+")
+        echo "La suma de $num1 y $num2 es $(( num1 + num2 ))"
+        ;;
+    "-")
+        echo "La resta de $num1 y $num2 es $(( num1 - num2 ))"
+        ;;
+    "x")
+        echo "La multiplicación de $num1 y $num2 es $(( num1 * num2 ))"
+        ;;
+    "/")
+        if [ "$num2" -eq 0 ]; then
+            echo "No se puede dividir entre cero."
+            exit 1
+        fi
+        echo "La división de $num1 y $num2 es $(( num1 / num2 ))"
+        ;;
+    "^")
+        echo "La potencia de $num1 elevado a $num2 es $(( num1 ** num2 ))"
+        ;;
+    *)
+        echo "Operador no reconocido."
+        exit 1
+        ;;
+esac
+
+~~~
+
 ## Ejercicio 2: Comprobación de ficheros y almacenamiento de datos
+
+~~~
+#!/bin/bash
+
+read -p "Introduce un directorio: " dir
+
+if [ ! -d "$dir" ]; then
+    echo "El directorio '$dir' no existe."
+    exit
+fi
+
+#Hasta aquí hemos verificado si el directorio existe
+
+read -p "Introduce el nombre del fichero en el directorio: " fich
+ruta="$dir/$fich"
+
+#Vamos a pedir los cinco nombres con un bucle for dentro del if que comprueba si el fichero existe
+#El pipe hacia awk nos permite imprimir la primera columna, que tiene los permisos
+
+if [ -e "$ruta" ]; then
+    echo "El fichero '$fich' existe."
+    echo "Permisos del fichero:"
+    ls -l "$ruta" | awk '{print $1}'
+ 	for i in {1..5}; do
+        read -p "Introduce el nombre completo del usuario $i: " nombre apellido1 apellido2
+        echo "$i:$nombre:$apellido1:$apellido2" >> "$ruta"
+    	done
+    	echo "Nombres almacenados en '$ruta'."
+else
+    echo "El fichero '$fich' no existe."
+    exit 1
+fi
+~~~
 
 ## Ejercicio 3: Lectura y formato de datos en un fichero
 
+~~~
+#!/bin/bash
+
+read -p "Introduce el nombre del fichero del apartado anterior: " fich
+
+ruta=$(find / -name $fich -type f 2>/dev/null)
+
+if [ -z $ruta ]; then
+	echo "$fich no es un fichero o no existe"
+	exit
+else 
+	echo "El fichero existe y su ruta es $ruta"
+fi
+
+if [ -r "$ruta" ]; then
+        awk -F: '{ printf "%-5s| %-15s| %-15s| %-15s\n", $1, $2, $3, $4 }' "$ruta"
+else
+        echo "No tiene permisos de lectura"
+fi
+~~~
+
 ## Ejercicio 4: Búsqueda de usuarios y registro de consultas
+
+~~~
+
+~~~
 
 ## Ejercicio 5: Escritorio remoto con Terminal Server
 
