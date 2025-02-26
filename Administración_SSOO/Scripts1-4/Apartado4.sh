@@ -28,8 +28,31 @@ if [ -z "$result" ]; then
 fi
 echo "Resultados encontrados:"
 time=$(date +"%H:%M:%S")  #Scamos una variable con la hora actual y usamos en el awk
-echo "$result" | awk -F: -v time="$time" '{ printf "%-5s| %-15s| %-15s| %-15s | %-10s\n", $1, $2, $3, $4, time}' 
+echo "$result" | awk -F: -v time="$time" '{ printf "%-5s| %-15s| %-15s| %-15s | %-10s\n", $1, $2, $3, $4, time}'
 
+function todas_consultas {
+	echo "Se van a guardar todas las consultas en un fichero general"
+	time=$(date +"%H:%M:%S")  
+	echo "$result" | awk -F: -v time="$time" '{ printf "%-5s| %-15s| %-15s| %-15s | %-10s\n", $1, $2, $3, $4, time}' >> $(date +"%Y-%m-%d").txt
+	echo "Se ha añadido la consulta a $(date +%Y-%m-%d).txt"
+}
 
+function cons_indiv {
+	echo "Se va a guardar la consulta en un fichero individualizado"
+        time=$(date +"%H:%M:%S")
+	num=1
+	indiv=$(date +"%Y-%m-%d")_$num.txt
+        while [ -e "$indiv" ]; do #Este bucle es para que compruebe si el archivo existe y de ser así, le añada un 1,2,3...
+                num=$(( num++ ))
+                indiv=$(date +"%Y-%m-%d")_$num.txt
+        done
+	echo "$result" | awk -F: -v time="$time" '{ printf "%-5s| %-15s| %-15s| %-15s | %-10s\n", $1, $2, $3, $4, time}' >> "$indiv"
+	echo "Se ha añadido la consulta a $indiv"
+}
+read -p "Quieres guardar la información en una consulta general (1), en una consulta individualizada (2) o salir sin guardar (3): " cons 
 
-# $(date +%Y-%m-%d).txt
+case $cons in
+	1) todas_consultas;;
+	2) cons_indiv;;
+	3) exit;;
+esac
