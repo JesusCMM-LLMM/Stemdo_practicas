@@ -13,8 +13,8 @@ if [[ ! $1 =~ ^[0-9]+$ ]]; then
 	exit
 fi
 
-if [ "$op" != "+" ] && [ "$op" != "-" ] && [ "$op" != "x" ] && [ "$op" != "/" ]; then
-        echo "El operador no es válido, por favor introduce + - x /"
+if [ "$op" != "+" ] && [ "$op" != "-" ] && [ "$op" != "x" ] && [ "$op" != "/" ] && [ "$op" != "^" ]; then
+        echo "El operador no es válido, por favor introduce +, -, x, /, o ^"
         exit
 fi
 
@@ -39,6 +39,9 @@ case "$op" in
             exit 1
         fi
         echo "La división de $num1 y $num2 es $(( num1 / num2 ))"
+        ;;
+    "^")
+        echo "La potencia de $num1 elevado a $num2 es $(( num1 ** num2 ))"
         ;;
     *)
         echo "Operador no reconocido."
