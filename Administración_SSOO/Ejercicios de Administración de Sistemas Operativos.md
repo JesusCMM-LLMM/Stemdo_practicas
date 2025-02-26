@@ -5,7 +5,7 @@
 ~~~
 
 #!/bin/bash
-
+#Primero comprobamos que sean tres argumentos exactamente
 if [ $# -ne 3 ]; then
 	echo "No has introducido exactamente tres argumentos. Vuelve a intentarlo" 
 	exit
@@ -13,6 +13,8 @@ fi
 num1=$1
 op=$2
 num2=$3
+
+#Aquí establecemos las condiciones de cada parámetros, que 1 y 3 sean números y el 2 un operador
 
 if [[ ! $1 =~ ^[0-9]+$ ]]; then
 	echo "El primer parámetro no es un número"
@@ -28,6 +30,8 @@ if [[ ! $3 =~ ^[0-9]+$ ]]; then
         echo "El segundo parámetro no es un número"
         exit
 fi
+
+#Y aquí ya se ejecuta la operación correspondiente
 
 case "$op" in
     "+")
@@ -101,12 +105,18 @@ read -p "Introduce el nombre del fichero del apartado anterior: " fich
 
 ruta=$(find / -name $fich -type f 2>/dev/null)
 
+#Lo siguiente es para comprobar si la búsqueda nos ha devuelto un fichero (-type f) que coincida con el nombre (-name $fich) introducido.
+#Si la búsqueda está vacía, sabemos que no es un fichero o no existe.
+
 if [ -z $ruta ]; then
 	echo "$fich no es un fichero o no existe"
 	exit
 else 
 	echo "El fichero existe y su ruta es $ruta"
 fi
+
+#Y por último, si existe y es un fichero, nos dice si tiene permisos de lectura
+#y si los tiene, los imprime en pantalla con awk en formato tabla
 
 if [ -r "$ruta" ]; then
         awk -F: '{ printf "%-5s| %-15s| %-15s| %-15s\n", $1, $2, $3, $4 }' "$ruta"
@@ -139,7 +149,7 @@ read -p "Introduce un nombre o apellido a buscar: " nomb
 
 result=$(grep -i $nomb "$ruta")
 
-#Comprobamos si el grep no nos ha dado coincidencias
+#Comprobamos si el grep no nos ha dado coincidencias, en caso contrario nos las muestra
 
 if [ -z "$result" ]; then
 	echo "No se encontraron coincidencias para $nomb"
@@ -148,6 +158,9 @@ fi
 echo "Resultados encontrados:"
 time=$(date +"%H:%M:%S")  #Scamos una variable con la hora actual y usamos en el awk
 echo "$result" | awk -F: -v time="$time" '{ printf "%-5s| %-15s| %-15s| %-15s | %-10s\n", $1, $2, $3, $4, time}'
+
+#Ahora vamos a dar la opcion de guardar el resulatdo de nuestra búsqueda, declarando dos funciones
+#y llamándolas con un case después
 
 function todas_consultas {
 	echo "Se van a guardar todas las consultas en un fichero general"
