@@ -1,0 +1,6 @@
+Posicion,Ruta
+Posición,"DC=miequipo,DC=local"
+Forward,"OU=Posición,DC=miequipo,DC=local"
+Midfielder,"OU=Posición,DC=miequipo,DC=local"
+Defense,"OU=Posición,DC=miequipo,DC=local"
+Goalkeeper,"OU=Posición,DC=miequipo,DC=local"

@@ -1,0 +1,7 @@
+FirstName,LastName,Username,Club,Position,OU
+Lionel,Messi,lmessi,PSG,Forward,"OU=Jugadores,DC=miequipo,DC=local"
+Cristiano,Ronaldo ,cronaldo,Al-Nasser,Forward,"OU=Jugadores,DC=miequipo,DC=local"
+Luka,Modric,lmodric,Real Madrid,Midfielder,"OU=Jugadores,DC=miequipo,DC=local"
+Dani,Olmo,dolmo,FC Barcelona,Midfielder,"OU=Jugadores,DC=miequipo,DC=local"
+Thibaut,Courtois,tcourtois,Real Madrid,Goalkeeper,"OU=Jugadores,DC=miequipo,DC=local"
+Virgil,VanDijk,vvandijk,Liverpool,Defense,"OU=Jugadores,DC=miequipo,DC=local"
