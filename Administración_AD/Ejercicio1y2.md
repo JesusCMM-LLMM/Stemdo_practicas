@@ -14,9 +14,10 @@ $ouPath = "OU=Jugadores,DC=miequipo,DC=local"
      }
 
 
-Import-Csv -Path C:\futbolistas.csv | ForEach-Object {
+Import-Csv -Path C:\futbolistas.csv | ForEach-Object {  #ForEach-Object hace que se cree un usuario para cada fila del archivo CSV
 
-# Aquí defino los parámetros que van a tener los usuarios (los futbolistas) y uso variables para entenderlo mejor. También establezo que el campo "club" va a ser el que actúe como grupo
+# Aquí defino los parámetros que van a tener los usuarios (los futbolistas) y uso variables para entenderlo mejor.
+#También establezo que el campo "club" va a ser el que actúe como grupo
 
      $nombreCompleto = "$($_.FirstName) $($_.LastName)"
      $usuario = $_.Username
