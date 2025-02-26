@@ -116,10 +116,9 @@ fi
 ~~~
 
 ## Ejercicio 4: Búsqueda de usuarios y registro de consultas
-
+Este es probablemente del que más orgulloso estoy. Busca el archivo, me dice si existe y busca el nombre o apellido dado, lo imprime por pantalla y nos da la opcion a guardarlo de dos formas o a salir sin guardar. 
 ~~~
 #!/bin/bash
-
 
 #Repetimos el find del apartado anterior para sacar la ruta del fichero, así no tenemos que introducirla manualmente
 
