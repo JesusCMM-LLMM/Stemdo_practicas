@@ -11,7 +11,7 @@ function limpiar(){
 function mensaje(){
     const fecha = new Date();
     const usuario = process.env.USERNAME 
-    console.log(`Hola, ${usuario}. La fecha actual es: ${fecha}.`); // EL .getUTC... funciona como las options en Bash, o así me lo ha explicado Javi
+    console.log(`Hola, ${usuario}. La fecha actual es: ${fecha}.`); 
 }
 function Directorio(){
     const DirActual = process.cwd();
