@@ -9,7 +9,7 @@ const fechaActual = new Date();
 const fec_act = fechaActual.getTime();
 const dif = (fechaUTC - fec_act) / 86400000
 
-// Mostrar el resultado
+// Mostrar el resultado, el unico problema es que me sale en decimales
 
 console.log(dif);
 
