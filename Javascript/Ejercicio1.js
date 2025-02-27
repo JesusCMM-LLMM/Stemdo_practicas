@@ -9,13 +9,13 @@ function limpiar(){
     console.clear
 }
 function mensaje(){
-    const currentDate = new Date();
-    const username = process.env.USERNAME 
-    console.log(`Hola, ${username}. La fecha actual es: ${currentDate}.`);
+    const fecha = new Date();
+    const usuario = process.env.USERNAME 
+    console.log(`Hola, ${usuario}. La fecha actual es: ${fecha.getUTCFullYear}.`);
 }
 function Directorio(){
-    const currentDirectory = process.cwd();
-    console.log(`Directorio actual: ${currentDirectory}`);
+    const DirActual = process.cwd();
+    console.log(`Directorio actual: ${DirActual}`);
 }
 
 limpiar();
