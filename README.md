@@ -67,3 +67,4 @@ Repositorio con los ejercicios planteados durante las prácticas en Stemdo. En e
 | [Ejercicio 1](/Javascript/Ejercicio1.js) | Script de saludo, hora y directorio actual |
 | [Ejercicio 2](/Javascript/Ejercicio2.js) | Script de info del entorno |
 | [Ejercicio 3](/Javascript/EjercCompletito.js) | Script con uso de variables, funciones, bucles y condicionales |
+| [Ejercicio 4](/Javascript/dias_restantes.js) | Script para calcular días hasta fin de año |
